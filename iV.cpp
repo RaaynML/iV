@@ -2,13 +2,13 @@
 //#define _NO_CRT_STDIO_INLINE 
 #include "includes.h"
 
-
 int main(int argc, char* argv[])
 {
 	printf_s("Response\n");
 
 	SDL_Point iwdim{960,640};
-	SDL_Window* mainwx; SDL_Renderer* rex;
+	SDL_Window* mainwx;
+	SDL_Renderer* rex;
 	SDL_CreateWindowAndRenderer("ImageView", iwdim.x, iwdim.y, SDL_WindowFlags(0ULL), &mainwx, &rex);
 	//Render not RenderER
 
@@ -65,5 +65,4 @@ int main(int argc, char* argv[])
 	SDL_DestroyWindow(mainwx);
 
 	return 0;
-
 }
